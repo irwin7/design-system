@@ -1,15 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Design System</title>
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:wght@900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://col-css.netlify.app/css/column.css">
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  
+  <main>
+    <section id="hero">
+      <div class="container">
+        <header class="site-header">
+          <a class="site-header__link" href="index.html">
+            <img class="site-header__logo" src="img/logo.svg" alt="logo">
+          </a>
+          <nav class="site-header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link" href="index.html">HOME</a></li>
+              <li class="nav__item"><a class="nav__link" href="about.html">ABOUT US</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Create your plan</a></li>
+            </ul>
+          </nav>
+          <button class="site-header__btn"></button>
+        </header>
+        <div class="hero">
+          <div class="inner-container">
+            <div class="hero__texts">
+              <h2 class="hero__title">Great coffee made simple</h2>
+              <p class="hero__text normal-text">Start your mornings with the world’s best coffees. Try our expertly
+                curated artisan coffees from our best roasters delivered directly to your door, at your schedule.</p>
+              <a class="hero__btn btn" href="#">Create your plan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="collection">
+      <div class="container">
+        <div class="inner-container">
+          <div class="collection">
+            <h2 class="collection__title"></h2>
+            <ul class="collection__list">
+              <li class="collection__item">
+                <div class="collection__texts">
+                <h3 class="collection__title-mini">Gran Espresso</h3>
+                <p class="collection__text">Light and flavorful blend with cocoa and black pepper for an intense experience.</p>
+                </div>
+              </li>
+              <li class="collection__item">
+                <div class="collection__texts">
+                <h3 class="collection__title-mini">Planalto</h3>
+                <p class="collection__text">Brazilian dark roast with rich and velvety body, and hints of fruits and nuts</p>
+                </div>
+              </li>
+              <li class="collection__item">
+                <div class="collection__texts">
+                <h3 class="collection__title-mini">Piccollo</h3>
+                <p class="collection__text">Mild and smooth blend featuring notes of toasted almond and dried cherry</p>
+                </div>
+              </li>
+              <li class="collection__item">
+                <div class="collection__texts">
+                <h3 class="collection__title-mini">Danche</h3>
+                <p class="collection__text">Ethiopian hand-harvested blend densely packed with vibrant fruit notes</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="choose">
+      <div class="container">
+        <div class="choose-inner">
+          <div class="inner-container">
+            <div class="choose">
+              <div class="choose__texts">
+                <h2 class="choose__title">Why choose us?</h2>
+                <p class="choose__text">A large part of our role is choosing which particular coffees will be featured in our range. This means working closely with the best coffee growers to give you a more impactful experience on every level.</p>
+              </div>
+              <ul class="choose__list">
+                <li class="choose__item">
+                  <div class="choose__txts">
+                    <h3 class="choose__title-mini">Best quality</h3>
+                    <p class="choose__des">Discover an endless variety of the world’s best artisan coffee from each of our roasters.</p>
+                  </div>
+                </li>
+                <li class="choose__item">
+                  <div class="choose__txts">
+                    <h3 class="choose__title-mini">Exclusive benefits</h3>
+                    <p class="choose__des">Special offers and swag when you subscribe, including 30% off your first shipment.</p>
+                  </div>
+                </li>
+                <li class="choose__item">
+                  <div class="choose__txts">
+                    <h3 class="choose__title-mini">Free shipping</h3>
+                    <p class="choose__des">We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tutorial">
+      <div class="container">
+        
+      </div>
+    </section>
+  </main>
+
+
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="inner-container">
+          <div class="footer">
+            <a class="footer__link" href="index.html">
+              <img class="footer__logo" src="img/footer-logo.svg" alt="logo">
+            </a>
+            <nav class="footer__nav nav">
+              <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="index.html">HOME</a></li>
+                <li class="nav__item"><a class="nav__link" href="about.html">ABOUT US</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Create your plan</a></li>
+              </ul>
+            </nav>
+            <ul class="footer__social social">
+              <li class="social__item"><a class="social__link" href="https://facebook.com"><i
+                    class='bx bxl-facebook-square'></i></a></li>
+              <li class="social__item"><a class="social__link" href="https://facebook.com"><i
+                    class='bx bxl-twitter'></i></a></li>
+              <li class="social__item"><a class="social__link" href="https://facebook.com"><i
+                    class='bx bxl-instagram'></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
