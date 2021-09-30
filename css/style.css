@@ -186,6 +186,75 @@
 
 /* /choose */
 
+/* tutorial */
+
+.tutorial {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.tutorial__title {
+  font-family: var(--fraunces);
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--grey);
+  margin-bottom: 90px;
+}
+.tutorial__list {
+  display: flex;
+}
+.tutorial__item {
+  max-width: 33%;
+  padding-top: 62px;
+  margin-bottom: 64px;
+  position: relative;
+}
+.tutorial__item:not(:last-child){
+  border-top: 2px solid #FDD6BA;
+}
+.tutorial__item::before{
+  content: "";
+  position: absolute;
+  height: 29px;
+  width: 29px;
+  background: var(--light-bg);
+  border: 2px solid var(--dark-cyan);
+  top: 0;
+  left: 0;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+.service__span {
+  font-family: var(--fraunces);
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #fdd6ba;
+}
+.tutorial__item:first-child .service__title{
+  width: 90%;
+}
+.service__texts{
+  width: 75%;
+}
+.service__title {
+  font-family: var(--fraunces);
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  color: var(--dark-grey);
+  margin-top: 32px;
+  margin-bottom: 42px;
+}
+.service__text {
+  font-family: var(--barlow);
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--dark-grey);
+}
+
+/* /tutorial */
+
 /* media */
 
 @media screen and (max-width:1212px) {
@@ -280,6 +349,21 @@
   }
 }
 
+@media screen and (max-width:1050px){
+  /* tutorial */
+  .service__title{
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .service__text{
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .service__texts{
+    width: 90%;
+  }
+}
+
 @media screen and (max-width:768px) {
   
   .hero__title{
@@ -331,6 +415,58 @@
   .choose__txts{
     text-align: center;
     width: 75%;
+  }
+  /* tutorial */
+  .tutorial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tutorial__list {
+    display: flex;
+    flex-direction: column;
+  }
+  .tutorial__item {
+    max-width: 100%;
+    padding-top: 0;
+    margin-bottom: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .service__span {
+    
+  }
+  .tutorial__item:not(:last-child){
+    border-top: none;
+  }
+  .tutorial__item:first-child .service__title{
+    width: 100%;
+  }
+  .service__texts{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .service__title {
+    font-family: var(--fraunces);
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    color: var(--dark-grey);
+    margin-top: 32px;
+    margin-bottom: 42px;
+  }
+  .service__text {
+    font-family: var(--barlow);
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--dark-grey);
+  }
+  .tutorial__item::before{
+   display: none;
   }
 }
 
